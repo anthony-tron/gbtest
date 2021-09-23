@@ -2600,3 +2600,776 @@ void gbtest::LR35902::ADD_HL_r16(uint16_t& reg)
 
     m_cyclesToWait = 8;
 }
+
+void gbtest::LR35902::lookUp(uint8_t code) {
+    switch (code) {
+        case 0:
+            opcode00h();
+            break;
+        case 1:
+            opcode01h();
+            break;
+        case 2:
+            opcode02h();
+            break;
+        case 3:
+            opcode03h();
+            break;
+        case 4:
+            opcode04h();
+            break;
+        case 5:
+            opcode05h();
+            break;
+        case 6:
+            opcode06h();
+            break;
+        case 7:
+            opcode07h();
+            break;
+        case 8:
+            opcode08h();
+            break;
+        case 9:
+            opcode09h();
+            break;
+        case 10:
+            opcode0Ah();
+            break;
+        case 11:
+            opcode0Bh();
+            break;
+        case 12:
+            opcode0Ch();
+            break;
+        case 13:
+            opcode0Dh();
+            break;
+        case 14:
+            opcode0Eh();
+            break;
+        case 15:
+            opcode0Fh();
+            break;
+        case 16:
+            opcode10h();
+            break;
+        case 17:
+            opcode11h();
+            break;
+        case 18:
+            opcode12h();
+            break;
+        case 19:
+            opcode13h();
+            break;
+        case 20:
+            opcode14h();
+            break;
+        case 21:
+            opcode15h();
+            break;
+        case 22:
+            opcode16h();
+            break;
+        case 23:
+            opcode17h();
+            break;
+        case 24:
+            opcode18h();
+            break;
+        case 25:
+            opcode19h();
+            break;
+        case 26:
+            opcode1Ah();
+            break;
+        case 27:
+            opcode1Bh();
+            break;
+        case 28:
+            opcode1Ch();
+            break;
+        case 29:
+            opcode1Dh();
+            break;
+        case 30:
+            opcode1Eh();
+            break;
+        case 31:
+            opcode1Fh();
+            break;
+        case 32:
+            opcode20h();
+            break;
+        case 33:
+            opcode21h();
+            break;
+        case 34:
+            opcode22h();
+            break;
+        case 35:
+            opcode23h();
+            break;
+        case 36:
+            opcode24h();
+            break;
+        case 37:
+            opcode25h();
+            break;
+        case 38:
+            opcode26h();
+            break;
+        case 39:
+            opcode27h();
+            break;
+        case 40:
+            opcode28h();
+            break;
+        case 41:
+            opcode29h();
+            break;
+        case 42:
+            opcode2Ah();
+            break;
+        case 43:
+            opcode2Bh();
+            break;
+        case 44:
+            opcode2Ch();
+            break;
+        case 45:
+            opcode2Dh();
+            break;
+        case 46:
+            opcode2Eh();
+            break;
+        case 47:
+            opcode2Fh();
+            break;
+        case 48:
+            opcode30h();
+            break;
+        case 49:
+            opcode31h();
+            break;
+        case 50:
+            opcode32h();
+            break;
+        case 51:
+            opcode33h();
+            break;
+        case 52:
+            opcode34h();
+            break;
+        case 53:
+            opcode35h();
+            break;
+        case 54:
+            opcode36h();
+            break;
+        case 55:
+            opcode37h();
+            break;
+        case 56:
+            opcode38h();
+            break;
+        case 57:
+            opcode39h();
+            break;
+        case 58:
+            opcode3Ah();
+            break;
+        case 59:
+            opcode3Bh();
+            break;
+        case 60:
+            opcode3Ch();
+            break;
+        case 61:
+            opcode3Dh();
+            break;
+        case 62:
+            opcode3Eh();
+            break;
+        case 63:
+            opcode3Fh();
+            break;
+        case 64:
+            opcode40h();
+            break;
+        case 65:
+            opcode41h();
+            break;
+        case 66:
+            opcode42h();
+            break;
+        case 67:
+            opcode43h();
+            break;
+        case 68:
+            opcode44h();
+            break;
+        case 69:
+            opcode45h();
+            break;
+        case 70:
+            opcode46h();
+            break;
+        case 71:
+            opcode47h();
+            break;
+        case 72:
+            opcode48h();
+            break;
+        case 73:
+            opcode49h();
+            break;
+        case 74:
+            opcode4Ah();
+            break;
+        case 75:
+            opcode4Bh();
+            break;
+        case 76:
+            opcode4Ch();
+            break;
+        case 77:
+            opcode4Dh();
+            break;
+        case 78:
+            opcode4Eh();
+            break;
+        case 79:
+            opcode4Fh();
+            break;
+        case 80:
+            opcode50h();
+            break;
+        case 81:
+            opcode51h();
+            break;
+        case 82:
+            opcode52h();
+            break;
+        case 83:
+            opcode53h();
+            break;
+        case 84:
+            opcode54h();
+            break;
+        case 85:
+            opcode55h();
+            break;
+        case 86:
+            opcode56h();
+            break;
+        case 87:
+            opcode57h();
+            break;
+        case 88:
+            opcode58h();
+            break;
+        case 89:
+            opcode59h();
+            break;
+        case 90:
+            opcode5Ah();
+            break;
+        case 91:
+            opcode5Bh();
+            break;
+        case 92:
+            opcode5Ch();
+            break;
+        case 93:
+            opcode5Dh();
+            break;
+        case 94:
+            opcode5Eh();
+            break;
+        case 95:
+            opcode5Fh();
+            break;
+        case 96:
+            opcode60h();
+            break;
+        case 97:
+            opcode61h();
+            break;
+        case 98:
+            opcode62h();
+            break;
+        case 99:
+            opcode63h();
+            break;
+        case 100:
+            opcode64h();
+            break;
+        case 101:
+            opcode65h();
+            break;
+        case 102:
+            opcode66h();
+            break;
+        case 103:
+            opcode67h();
+            break;
+        case 104:
+            opcode68h();
+            break;
+        case 105:
+            opcode69h();
+            break;
+        case 106:
+            opcode6Ah();
+            break;
+        case 107:
+            opcode6Bh();
+            break;
+        case 108:
+            opcode6Ch();
+            break;
+        case 109:
+            opcode6Dh();
+            break;
+        case 110:
+            opcode6Eh();
+            break;
+        case 111:
+            opcode6Fh();
+            break;
+        case 112:
+            opcode70h();
+            break;
+        case 113:
+            opcode71h();
+            break;
+        case 114:
+            opcode72h();
+            break;
+        case 115:
+            opcode73h();
+            break;
+        case 116:
+            opcode74h();
+            break;
+        case 117:
+            opcode75h();
+            break;
+        case 118:
+            opcode76h();
+            break;
+        case 119:
+            opcode77h();
+            break;
+        case 120:
+            opcode78h();
+            break;
+        case 121:
+            opcode79h();
+            break;
+        case 122:
+            opcode7Ah();
+            break;
+        case 123:
+            opcode7Bh();
+            break;
+        case 124:
+            opcode7Ch();
+            break;
+        case 125:
+            opcode7Dh();
+            break;
+        case 126:
+            opcode7Eh();
+            break;
+        case 127:
+            opcode7Fh();
+            break;
+        case 128:
+            opcode80h();
+            break;
+        case 129:
+            opcode81h();
+            break;
+        case 130:
+            opcode82h();
+            break;
+        case 131:
+            opcode83h();
+            break;
+        case 132:
+            opcode84h();
+            break;
+        case 133:
+            opcode85h();
+            break;
+        case 134:
+            opcode86h();
+            break;
+        case 135:
+            opcode87h();
+            break;
+        case 136:
+            opcode88h();
+            break;
+        case 137:
+            opcode89h();
+            break;
+        case 138:
+            opcode8Ah();
+            break;
+        case 139:
+            opcode8Bh();
+            break;
+        case 140:
+            opcode8Ch();
+            break;
+        case 141:
+            opcode8Dh();
+            break;
+        case 142:
+            opcode8Eh();
+            break;
+        case 143:
+            opcode8Fh();
+            break;
+        case 144:
+            opcode90h();
+            break;
+        case 145:
+            opcode91h();
+            break;
+        case 146:
+            opcode92h();
+            break;
+        case 147:
+            opcode93h();
+            break;
+        case 148:
+            opcode94h();
+            break;
+        case 149:
+            opcode95h();
+            break;
+        case 150:
+            opcode96h();
+            break;
+        case 151:
+            opcode97h();
+            break;
+        case 152:
+            opcode98h();
+            break;
+        case 153:
+            opcode99h();
+            break;
+        case 154:
+            opcode9Ah();
+            break;
+        case 155:
+            opcode9Bh();
+            break;
+        case 156:
+            opcode9Ch();
+            break;
+        case 157:
+            opcode9Dh();
+            break;
+        case 158:
+            opcode9Eh();
+            break;
+        case 159:
+            opcode9Fh();
+            break;
+        case 160:
+            opcodeA0h();
+            break;
+        case 161:
+            opcodeA1h();
+            break;
+        case 162:
+            opcodeA2h();
+            break;
+        case 163:
+            opcodeA3h();
+            break;
+        case 164:
+            opcodeA4h();
+            break;
+        case 165:
+            opcodeA5h();
+            break;
+        case 166:
+            opcodeA6h();
+            break;
+        case 167:
+            opcodeA7h();
+            break;
+        case 168:
+            opcodeA8h();
+            break;
+        case 169:
+            opcodeA9h();
+            break;
+        case 170:
+            opcodeAAh();
+            break;
+        case 171:
+            opcodeABh();
+            break;
+        case 172:
+            opcodeACh();
+            break;
+        case 173:
+            opcodeADh();
+            break;
+        case 174:
+            opcodeAEh();
+            break;
+        case 175:
+            opcodeAFh();
+            break;
+        case 176:
+            opcodeB0h();
+            break;
+        case 177:
+            opcodeB1h();
+            break;
+        case 178:
+            opcodeB2h();
+            break;
+        case 179:
+            opcodeB3h();
+            break;
+        case 180:
+            opcodeB4h();
+            break;
+        case 181:
+            opcodeB5h();
+            break;
+        case 182:
+            opcodeB6h();
+            break;
+        case 183:
+            opcodeB7h();
+            break;
+        case 184:
+            opcodeB8h();
+            break;
+        case 185:
+            opcodeB9h();
+            break;
+        case 186:
+            opcodeBAh();
+            break;
+        case 187:
+            opcodeBBh();
+            break;
+        case 188:
+            opcodeBCh();
+            break;
+        case 189:
+            opcodeBDh();
+            break;
+        case 190:
+            opcodeBEh();
+            break;
+        case 191:
+            opcodeBFh();
+            break;
+        case 192:
+            opcodeC0h();
+            break;
+        case 193:
+            opcodeC1h();
+            break;
+        case 194:
+            opcodeC2h();
+            break;
+        case 195:
+            opcodeC3h();
+            break;
+        case 196:
+            opcodeC4h();
+            break;
+        case 197:
+            opcodeC5h();
+            break;
+        case 198:
+            opcodeC6h();
+            break;
+        case 199:
+            opcodeC7h();
+            break;
+        case 200:
+            opcodeC8h();
+            break;
+        case 201:
+            opcodeC9h();
+            break;
+        case 202:
+            opcodeCAh();
+            break;
+        case 203:
+            opcodeCBh();
+            break;
+        case 204:
+            opcodeCCh();
+            break;
+        case 205:
+            opcodeCDh();
+            break;
+        case 206:
+            opcodeCEh();
+            break;
+        case 207:
+            opcodeCFh();
+            break;
+        case 208:
+            opcodeD0h();
+            break;
+        case 209:
+            opcodeD1h();
+            break;
+        case 210:
+            opcodeD2h();
+            break;
+        case 211:
+            opcodeD3h();
+            break;
+        case 212:
+            opcodeD4h();
+            break;
+        case 213:
+            opcodeD5h();
+            break;
+        case 214:
+            opcodeD6h();
+            break;
+        case 215:
+            opcodeD7h();
+            break;
+        case 216:
+            opcodeD8h();
+            break;
+        case 217:
+            opcodeD9h();
+            break;
+        case 218:
+            opcodeDAh();
+            break;
+        case 219:
+            opcodeDBh();
+            break;
+        case 220:
+            opcodeDCh();
+            break;
+        case 221:
+            opcodeDDh();
+            break;
+        case 222:
+            opcodeDEh();
+            break;
+        case 223:
+            opcodeDFh();
+            break;
+        case 224:
+            opcodeE0h();
+            break;
+        case 225:
+            opcodeE1h();
+            break;
+        case 226:
+            opcodeE2h();
+            break;
+        case 227:
+            opcodeE3h();
+            break;
+        case 228:
+            opcodeE4h();
+            break;
+        case 229:
+            opcodeE5h();
+            break;
+        case 230:
+            opcodeE6h();
+            break;
+        case 231:
+            opcodeE7h();
+            break;
+        case 232:
+            opcodeE8h();
+            break;
+        case 233:
+            opcodeE9h();
+            break;
+        case 234:
+            opcodeEAh();
+            break;
+        case 235:
+            opcodeEBh();
+            break;
+        case 236:
+            opcodeECh();
+            break;
+        case 237:
+            opcodeEDh();
+            break;
+        case 238:
+            opcodeEEh();
+            break;
+        case 239:
+            opcodeEFh();
+            break;
+        case 240:
+            opcodeF0h();
+            break;
+        case 241:
+            opcodeF1h();
+            break;
+        case 242:
+            opcodeF2h();
+            break;
+        case 243:
+            opcodeF3h();
+            break;
+        case 244:
+            opcodeF4h();
+            break;
+        case 245:
+            opcodeF5h();
+            break;
+        case 246:
+            opcodeF6h();
+            break;
+        case 247:
+            opcodeF7h();
+            break;
+        case 248:
+            opcodeF8h();
+            break;
+        case 249:
+            opcodeF9h();
+            break;
+        case 250:
+            opcodeFAh();
+            break;
+        case 251:
+            opcodeFBh();
+            break;
+        case 252:
+            opcodeFCh();
+            break;
+        case 253:
+            opcodeFDh();
+            break;
+        case 254:
+            opcodeFEh();
+            break;
+        case 255:
+            opcodeFFh();
+            break;
+    }
+}

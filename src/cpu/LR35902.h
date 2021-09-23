@@ -51,6 +51,7 @@ private:
 
     InterruptController m_interruptController;
     void handleInterrupt();
+    void lookUp(uint8_t);
 
     LR35902Registers m_registers;
 
